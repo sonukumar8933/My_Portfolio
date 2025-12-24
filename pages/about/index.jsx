@@ -16,10 +16,11 @@ import {
   SiMysql,
   SiGit,
   SiGithub,
-  SiVisualstudiocode,
   SiLinux,
   SiPostman,
 } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
+
 
 
 
@@ -50,7 +51,7 @@ export const aboutData = [
       },
       {
         title: "Tools & Platforms",
-        icons: [SiGit, SiGithub, SiVisualstudiocode, SiLinux, SiPostman, FaCogs],
+        icons: [SiGit, SiGithub, FaCode, SiLinux, SiPostman, FaCogs],
       },
      
     ],
