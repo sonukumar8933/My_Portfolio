@@ -16,7 +16,7 @@ import {
   SiMysql,
   SiGit,
   SiGithub,
-  SiVisualstudio,
+  SiVisualstudiocode,
   SiLinux,
   SiPostman,
 } from "react-icons/si";
@@ -50,7 +50,7 @@ export const aboutData = [
       },
       {
         title: "Tools & Platforms",
-        icons: [SiGit, SiGithub, SiVisualstudio, SiLinux, SiPostman, FaCogs],
+        icons: [SiGit, SiGithub, SiVisualstudiocode, SiLinux, SiPostman, FaCogs],
       },
      
     ],
