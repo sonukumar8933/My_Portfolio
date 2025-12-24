@@ -9,17 +9,19 @@ import {
   SiTailwindcss,
   SiNodedotjs,
   SiExpress,
-  SiAmazonaws,
+  SiAmazonwebservices,
   SiVercel,
   SiDocker,
   SiMongodb,
   SiMysql,
   SiGit,
   SiGithub,
-  SiVisualstudiocode,
+  SiVisualstudio,
   SiLinux,
   SiPostman,
 } from "react-icons/si";
+
+
 
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
@@ -40,7 +42,7 @@ export const aboutData = [
       },
       {
         title: "Cloud & DevOps",
-        icons: [SiAmazonaws, SiVercel, SiDocker],
+        icons: [SiAmazonwebservices, SiVercel, SiDocker],
       },
       {
         title: "Databases",
@@ -48,7 +50,7 @@ export const aboutData = [
       },
       {
         title: "Tools & Platforms",
-        icons: [SiGit, SiGithub, SiVisualstudiocode, SiLinux, SiPostman, FaCogs],
+        icons: [SiGit, SiGithub, SiVisualstudio, SiLinux, SiPostman, FaCogs],
       },
      
     ],
