@@ -46,30 +46,28 @@ const Contact = () => {
 
           {/* Netlify Form */}
           <motion.form
+            name="contact"
+            method="POST"
+            action="/success"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
-            name="contact"
-            method="POST"
-            action="/success"
-            data-netlify="true"
-            onSubmit={handleSubmit}
-            autoComplete="off"
-            autoCapitalize="off"
           >
-            {/* REQUIRED for Netlify */}
+            {/* Netlify required hidden fields */}
             <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
 
-            {/* Inputs */}
+            {/* inputs */}
             <div className="flex gap-x-6 w-full">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
                 className="input"
-                disabled={isLoading}
                 required
               />
               <input
@@ -77,7 +75,6 @@ const Contact = () => {
                 name="email"
                 placeholder="E-mail"
                 className="input"
-                disabled={isLoading}
                 required
               />
             </div>
@@ -87,7 +84,6 @@ const Contact = () => {
               name="subject"
               placeholder="Subject"
               className="input"
-              disabled={isLoading}
               required
             />
 
@@ -95,17 +91,15 @@ const Contact = () => {
               name="message"
               placeholder="Message..."
               className="textarea"
-              disabled={isLoading}
               required
             />
 
             <button
               type="submit"
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-              disabled={isLoading}
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                {isLoading ? "Sending..." : "Let's talk"}
+                Let's talk
               </span>
 
               <BsArrowRight
